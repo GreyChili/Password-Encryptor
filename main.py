@@ -16,7 +16,7 @@ def Compare(inputPass, targetPassEncrypted):
     else:
         return False
 
-def Encrypt( unencryptedPass):
+def Encrypt(unencryptedPass):
 
     unencryptedPass = unencryptedPass.encode()
     encryptedPass = bcrypt.hashpw(unencryptedPass, bcrypt.gensalt())
