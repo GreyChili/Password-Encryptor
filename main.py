@@ -43,7 +43,8 @@ if __name__ == "__main__":
     elif args.verbose:
         message = "Unencrypted password is:\n%s\nEncrypted password is:\n%s" %(args.password, encyptedPass)
     elif args.compare != None:
-        if Compare(args.password, args.compare)
+        if Compare(args.password, args.compare):
+            message = "Password "
     else:
         message = "Encrypted password is:\n%s" % (encyptedPass)
 
